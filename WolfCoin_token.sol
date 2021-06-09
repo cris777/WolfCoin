@@ -1,5 +1,19 @@
 pragma solidity ^0.4.4;
 
+// ----------------------------------------------------------------------------
+// Wolfcoin token contract
+//
+// Symbol        : {{WCN}}
+// Name          : {{Wolfcoin}}
+// Total supply  : {{100000000}}
+// Decimals      : {{9}}
+// Owner Account : {{Cristian Sierra Gil}}
+//
+// Enjoy.
+//
+// (c) by Cristian Sierra Gil 2021. MIT Licence.
+// ----------------------------------------------------------------------------
+
 contract Token {
 
     /// @return total amount of tokens
