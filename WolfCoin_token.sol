@@ -89,8 +89,8 @@ contract Wolfcoin is ERC20Interface, SafeMath {
         name = "{{Wolfcoin}}";
         decimals = {{9}};
         _totalSupply = {{100000000}};
-        balances[{{0x5e2d2B67D0d87465eFc1103a2CE4752e360258C0}}] = _totalSupply;
-        emit Transfer(address(0), {{{0x5e2d2B67D0d87465eFc1103a2CE4752e360258C0}}, _totalSupply);
+        balances[0x5e2d2B67D0d87465eFc1103a2CE4752e360258C0] = _totalSupply;
+        emit Transfer(address(0), 0x5e2d2B67D0d87465eFc1103a2CE4752e360258C0, _totalSupply);
     }
 
 
