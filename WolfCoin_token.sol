@@ -130,8 +130,8 @@ contract ERC20Wolfcoin is StandardToken {
 
     function ERC20Wolfcoin(
         ) {
-        balances[msg.sender] = 1000000000;               // Give the creator all initial tokens (100000 for example)
-        totalSupply = 1000000000;                        // Update total supply (100000 for example)
+        balances[msg.sender] = 100000000;               // Give the creator all initial tokens (100000 for example)
+        totalSupply = 100000000;                        // Update total supply (100000 for example)
         name = "WOLFCOIN";                                   // Set the name for display purposes
         decimals = 9;                            // Amount of decimals for display purposes
         symbol = "(WCN)";                               // Set the symbol for display purposes
