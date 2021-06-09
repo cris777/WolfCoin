@@ -71,7 +71,7 @@ contract ApproveAndCallFallBack {
 /**
 ERC20 Token, with the addition of symbol, name and decimals and assisted token transfers
 */
-contract {{WCN}}Token is ERC20Interface, SafeMath {
+contract Wolfcoin is ERC20Interface, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
