@@ -114,7 +114,7 @@ contract ERC20Wolfcoin is StandardToken {
 
 //make sure this function name matches the contract name above. So if you're token is called TutorialToken, make sure the //contract name above is also TutorialToken instead of ERC20Token
 
-    function ERC20Intercoin(
+    function ERC20Wolfcoin(
         ) {
         balances[msg.sender] = 1000000000;               // Give the creator all initial tokens (100000 for example)
         totalSupply = 1000000000;                        // Update total supply (100000 for example)
