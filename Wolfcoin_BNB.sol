@@ -8,8 +8,8 @@ contract Token {
 	string public symbol = "WCN"; 
 	uint public decimals = 9;
 
-	event Transfer(address indexed from, address indexed to, uint value)
-	event Approval(address indexed owner, address indexed spender, uint value)
+	event Transfer(address indexed from, address indexed to, uint value);
+	event Approval(address indexed owner, address indexed spender, uint value);
 
 	constructor() {
 		balances[msg.sender] = totalSupply;
@@ -26,16 +26,16 @@ contract Token {
 		return true;
 	}
 
-	function transferFrom(address from, address to, uint value) public returns (true) {
+	function transferFrom(address from, address to, uint value) public returns (bool) {
 		require(balanceOf(from) >= value, 'balance to low');
-		require(allowance[from][msg.sender] >= value 'allowance to low'
+		require(allowance[from][msg.sender] >= value, 'allowance to low');
 		balances[to] += value;
 		balances[from]	-= value;
 		emit Transfer(from, to, value);
 		return true;
 	}
 	
-	function approve(adress spender, uint value) public returns (bool) {
+	function approve(address spender, uint value) public returns (bool) {
 		allowance[msg.sender][spender] = value;
 		emit Approval(msg.sender, spender, value);
 		return true;
