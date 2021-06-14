@@ -3,10 +3,10 @@ pragma solidity ^0.4.24;
 contract Token {
 	mapping(address => uint) public balances;
 	mapping(address => mapping(address => uint)) public allowance;
-	uint public totalSupply = 100000 * 10 ** 9;
+	uint public totalSupply = 21000000 * 10 ** 2;
 	string public name = "Wolfcoin";
-	string public symbol = "WCN"; 
-	uint public decimals = 9;
+	string public symbol = "WCW"; 
+	uint public decimals = 2;
 
 	event Transfer(address indexed from, address indexed to, uint value);
 	event Approval(address indexed owner, address indexed spender, uint value);
